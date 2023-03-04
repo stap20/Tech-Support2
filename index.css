@@ -1,0 +1,63 @@
+.main-container {
+  height: 100vh !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-container:hover {
+  height: 65px !important;
+}
+
+.header-container {
+  height: 50px;
+
+  transition: height 0.35s ease-in-out;
+}
+
+.content-container {
+  margin-top: 10px;
+  background-color: darksalmon;
+}
+
+.helper-container {
+  width: 350px !important;
+  border-radius: 16px;
+  background-color: #adcdea;
+}
+
+.remote-container {
+  width: 250px !important;
+  border-radius: 16px;
+  background-color: #adcdea;
+}
+
+.island-container {
+  margin-right: 200px;
+  margin-left: 200px;
+  border-radius: 16px;
+  background-color: #adcdea;
+}
+
+.content-sidehelper-container {
+  width: 350px;
+  background-color: rebeccapurple;
+}
+
+.main-content-container {
+  margin-left: 10px;
+  background-color: darkseagreen;
+}
+
+/* @media (min-width: 1500px) {
+  .island-container {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+} */
+
+.test {
+  background-color: blue;
+}
+.test2 {
+  background-color: aqua;
+}
