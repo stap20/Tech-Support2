@@ -1,28 +1,28 @@
-const assetsPath = "./assets/sidebar";
-const buttonsData = [
+const sidebarAssetsPath = "./assets/sidebar";
+const sidebarButtonsData = [
   {
     label: "Home",
-    src: `${assetsPath}/home-active.png`,
+    src: `${sidebarAssetsPath}/home-active.png`,
     pageContent: "<home-page></home-page>",
   },
   {
     label: "Monitoring",
-    src: `${assetsPath}/monitoring.png`,
+    src: `${sidebarAssetsPath}/monitoring.png`,
     pageContent: "<h1>Monitoring Page</h1>",
   },
   {
     label: "System Alert",
-    src: `${assetsPath}/systemAlert.png`,
+    src: `${sidebarAssetsPath}/systemAlert.png`,
     pageContent: "<h1>System Alert Page</h1>",
   },
   {
     label: "Web Error",
-    src: `${assetsPath}/webError.png`,
+    src: `${sidebarAssetsPath}/webError.png`,
     pageContent: "<h1>Web Error Page</h1>",
   },
   {
     label: "Tasks",
-    src: `${assetsPath}/tasks.png`,
+    src: `${sidebarAssetsPath}/tasks.png`,
     pageContent: "<h1>Tasks Page</h1>",
     size: {
       height: "40px",
@@ -31,7 +31,7 @@ const buttonsData = [
   },
   {
     label: "Client Claims",
-    src: `${assetsPath}/clientClaims.png`,
+    src: `${sidebarAssetsPath}/clientClaims.png`,
     pageContent: "<h1>Client Claims Page</h1>",
     size: {
       height: "40px",
@@ -40,7 +40,7 @@ const buttonsData = [
   },
   {
     label: "Education",
-    src: `${assetsPath}/education.png`,
+    src: `${sidebarAssetsPath}/education.png`,
     pageContent: "<h1>Education Page</h1>",
     size: {
       height: "45px",
@@ -49,7 +49,7 @@ const buttonsData = [
   },
   {
     label: "Our Projects",
-    src: `${assetsPath}/ourProjects.png`,
+    src: `${sidebarAssetsPath}/ourProjects.png`,
     pageContent: "<h1>Our Projects Page</h1>",
     size: {
       height: "40px",
@@ -58,7 +58,7 @@ const buttonsData = [
   },
   {
     label: "Ideas",
-    src: `${assetsPath}/ideas.png`,
+    src: `${sidebarAssetsPath}/ideas.png`,
     pageContent: "<h1>Ideas Page</h1>",
     size: {
       height: "40px",
@@ -67,7 +67,7 @@ const buttonsData = [
   },
   {
     label: "Sharing",
-    src: `${assetsPath}/sharing.png`,
+    src: `${sidebarAssetsPath}/sharing.png`,
     pageContent: "<h1>Sharing Page</h1>",
     size: {
       height: "32px",
@@ -110,7 +110,7 @@ class Sidebar extends HTMLElement {
   // Called when the Sidebar custom element is added to the page
   connectedCallback() {
     // Generate the HTML for the sidebar buttons
-    const buttonsHtml = buttonsData
+    const buttonsHtml = sidebarButtonsData
       .map((button, index) => {
         return `
           <a class="sidebar-btn d-flex flex-column-row align-items-center ${
@@ -131,7 +131,7 @@ class Sidebar extends HTMLElement {
     this.innerHTML = `<div class="sidebar d-flex flex-column">${buttonsHtml}</div>`;
 
     // set default pageContent for Home button
-    const defaultPageContent = buttonsData[0].pageContent;
+    const defaultPageContent = sidebarButtonsData[0].pageContent;
     const mainContentContainer = document.querySelector(
       ".main-content-container"
     );

@@ -7,6 +7,7 @@
     />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./sidebar/sidebar.css" />
+    <link rel="stylesheet" href="./header/appbar/appbar.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,9 +19,13 @@
         <main-sidebar></main-sidebar>
 
         <div class="col d-flex flex-column">
-          <div class="d-flex flex-row header-container">
+          <div
+            class="d-flex flex-row d-flex justify-content-between header-container"
+          >
             <div class="helper-container"></div>
-            <div class="flex-grow-1 island-container"></div>
+
+            <main-appbar class="appbar"></main-appbar>
+
             <div class="remote-container"></div>
           </div>
 
@@ -32,6 +37,7 @@
       </div>
     </div>
     <script src="./sidebar/sidebar.js"></script>
+    <script src="./header/appbar/appbar.js"></script>
     <script src="./pages/home/home.js"></script>
   </body>
 </html>

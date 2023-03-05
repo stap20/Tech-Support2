@@ -1,0 +1,42 @@
+
+.appbar-btn {
+  width: 70px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none !important;
+  
+}
+
+.appbar-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.appbar-btn-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: scale-down;
+}
+
+.appbar-btn-label {
+  margin-top: 6px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 10px;
+  color: #deebf6;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.header-container .appbar-btn-label {
+  display: none;
+}
+.header-container:hover .appbar-btn-label {
+  display: block;
+}
+
+.appbar-btn.active .appbar-btn-label {
+  color: white;
+}
